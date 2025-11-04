@@ -1,0 +1,405 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+   
+}
+.collapse li a{
+    font-weight:450;
+}
+.main-content h1{
+    background: url(images/gradient.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation:animate 10s linear infinite;
+
+}
+@keyframes animate {
+    to{
+        background-position-x:-200px ;
+    }
+}
+
+h1 {
+    animation: textappearance 1s ease-in-out;
+}
+
+@keyframes textappearance {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{ 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+body.darkmode{
+background-color: #0D1117;
+ color: white;
+}
+body.darkmode nav li a {
+    color: white;
+}
+body.darkmode p{
+    color: white;
+}
+
+body.darkmode .cards h6{
+    color: white;
+} 
+body .intern p{
+    color: black;
+}
+
+
+.offcanvas-body a{
+    font-size:18px;
+}
+body.darkmode .myprojects p{
+    color: black;
+}
+.offcanvas-body i{
+   font-size: 20px;
+   padding-right: 30px;
+}
+
+.sun{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+      .sun {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: white; 
+        border-radius: 50%;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+      }
+
+      .sun i {
+        font-size: 20px;
+        color: orange; 
+      }
+       body.darkmode .sun {
+    background-color: black;
+  }
+
+  body.darkmode .sun i {
+    color: yellow; 
+    }
+}
+
+.major{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+.centerit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myimg img{ 
+    width:380px;
+    height:380px;
+    border-radius: 50%;
+   
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .major{
+        grid-template-columns:1fr;
+       
+    }.myimg img{
+        margin-top: 100px;
+        margin-inline: 18px;
+    }
+}
+@media (min-width:320px) and (max-width:767px) {
+
+    .Skills,.intern,.educations,.heading{
+        margin-top: 80px;
+    }
+
+}   
+.about{
+    margin-top: 130px;
+}
+.about p{
+    font-size:18px;
+}
+.about .two{
+    margin-inline: 35px;
+}
+.Skills{
+    margin-top: 100px;
+    font-size:18px;
+}
+
+.card{
+    margin-bottom: 50px;
+}
+.card img{
+    object-fit: cover;
+    width: 100%;
+   
+}
+@media (min-width:320px) and (max-width:767px) {
+    .cards .card{
+      width:200px;
+      height: 200px;
+      margin-inline: auto;
+      
+     }
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+}
+
+.educations{
+    margin-top: 80px;
+}
+body.darkmode .educations p{
+    color:black
+}
+
+.intern{
+    margin-top: 80px;
+}
+.cert-1:hover {
+    transform: scale(1.10);
+}
+.cert-2:hover {
+    transform: scale(1.10);
+}
+.college,.school,.school-x{
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;    
+  border-radius: 10px;
+  gap: 15px;
+  color:black;
+  flex-direction: row;
+} 
+.days{
+    display: flex;
+    margin-top: 10px;
+    column-gap: 5px;
+}
+.fa-regular{
+    font-size: 20px;
+}
+.college{
+   background-color: #526a91;
+}
+
+.school{
+  background-color:  #526a91;
+}
+.school-x{
+ background-color:  #526a91;
+}
+.text h5{
+     margin: 0 0 5px 0px;
+  font-size: 18px;
+}
+.text p {
+  margin: 0;
+  font-size: 16px;
+}
+.fa-solid{
+    font-size: 30px;
+    color: white;
+}
+#c{
+    font-size: 15px;
+    color:black;
+    margin-top: 3px;
+    padding-left: 5px;
+}
+.internship{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8); 
+    background-color: #526a91;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+  
+
+.scroll{
+   overflow-x: hidden;
+   white-space:nowrap;
+   margin-inline: 50px;
+}
+
+.scroll-content{
+    display: inline-flex;
+    animation: animation 20s linear infinite;
+}
+.scroll-content :hover{
+    transform: scale(1.05);
+    animation-play-state: paused;
+}
+ .scroll-content:hover{
+   animation-play-state: paused;
+   cursor: pointer;
+} 
+
+@keyframes animation {
+    
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+ }
+
+.scroll-content .card {
+  width: 340px;
+}
+
+
+.certificates  h1{
+        margin-top: 80px;
+    }
+
+
+.myprojects .one{
+    text-align: justify;
+}   
+ @media (min-width:320px) and (max-width:425px) {
+    .myprojects, .one{
+    width: 280px;
+    height: auto;
+    margin-inline: auto;
+}
+ } 
+
+
+.getin{
+   margin-top: 80px;
+}
+
+.main-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    height: auto;
+    width: auto;;
+ 
+}
+
+
+.sub-box1, .sub-box2 {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+body.darkmode .sub-box1 i{
+   color:white;
+}
+body.darkmode .sub-box1 h2{
+   color:white;
+}
+
+body.darkmode .tags label{
+    color:white;
+    margin-bottom: 5px;
+}
+
+.tags input,
+.tags textarea {
+    background-color:  #42587b;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.tags input:focus,
+.tags1 input:focus,
+.tags1 textarea:focus {
+    border: 1px solid #0ea5e9;
+}
+
+
+.mail,.github,.linked {
+   display: flex;
+   column-gap:5px;
+
+}
+.mail i,.github i,.linked i{
+    font-size: 20px;
+}
+
+.sub-box1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.tags,.tags1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .main-box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s;
+  transform: translateY(20px);
+  z-index: 9999;
+  color: white;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.toast.success {
+  background-color: #42587b; /* green */
+  color: white;
+}
+.toast.error {
+  background-color: #dc3545; /* red */
+}
